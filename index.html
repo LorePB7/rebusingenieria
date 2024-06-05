@@ -10,20 +10,20 @@
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
-    <header class="hero">
+    <header class="hero" id="inicio">
         <nav class="nav container">
             <div class="nav__logo">
                 <h1 class="nav__title">Rebus Ingenieria</h1>
             </div>
             <ul class="nav__link nav__link--menu">
                 <li class="nav__items">
-                    <a href="index.html" class="nav__links">Inicio</a>
+                    <a href="#inicio" class="nav__links">Inicio</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Nosotros</a>
+                    <a href="#nosotros" class="nav__links">Nosotros</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Servicios</a>
+                    <a href="#servicios" class="nav__links">Servicios</a>
                 </li>
                 <li class="nav__items">
                     <a href="contacto.html" class="nav__links">Contacto</a>
@@ -42,7 +42,7 @@
             <h1 class="hero__title">¿QUIENES SOMOS?</h1>
             <p class="hero__par">Nos dedicamos al Diseño y Cálculo Estructural de todo tipo de obras, sin importar su tamaño, desde proyectos domiciliarios a industriales, abarcando obras nuevas y ampliaciones.
             También realizamos el revelamiento y evaluación de estructuras existentes en uso.</p>
-            <a href="#" class="cta">Contactanos</a>
+            <a href="contacto.html" class="cta">Contactanos</a>
         </section>
     </header>
     <main>
@@ -53,13 +53,13 @@
                     <h2 class="subtitle">Nosotros</h2>
                     <p class="knowledge__par">Somos una consultora de ingeniería conformada por profesionales de diferentes áreas, caracterizado por la innovación, eficiencia y responsabilidad.
                     Nos mantenemos actualizados en el uso de nuevas tecnologías disponibles en el mercado para brindar soluciones rápidas, económicas y eficientes a los proyectos de nuestros clientes.</p>
-                    <a href="#" class="cta">Conoce nuestro equipo de trabajo</a>
+                    <a href="#nosotros" class="page-scroll cta">Conoce nuestro equipo de trabajo</a>
                 </div>
 
             </div>
         </section>
 
-        <section class="container about">
+        <section class="container about" id="servicios">
             <h2 class="subtitle">Servicios</h2>
             <p class="about__par">Nos dedicamos al Diseño y Cálculo Estructural de todo tipo de obras, sin importar su tamaño, desde proyectos domiciliarios a industriales, abarcando obras nuevas y ampliaciones.
             También realizamos el revelamiento y evaluación de estructuras existentes en uso. Hacemos estructuras de hormigón, metálicas y proyectos especiales</p>
@@ -88,7 +88,7 @@
             </div>
         </section>
 
-        <section class="nosotros">
+        <section class="nosotros" id="nosotros">
             <div class="nosotros__container container">
 
                 <img src="./images/left-arrow.svg" alt="before" class="nosotros__arrow" id="before">
@@ -145,7 +145,7 @@
                 </div>
             </div>
         </section>
-
+        
         <footer>
             <div class="waves">
                 <div class="wave" id="wave1"></div>
@@ -160,18 +160,22 @@
                 <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
             </ul>
             <ul class="menute">
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Nosotros</a></li>
-                <li><a href="">Servicios</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
             <p>©2024 Lorenzo Píccolo web developer. | All Rights Reserved.</p>
         </footer>
 
     </main>
 
+    <script src="./js/nav-fix.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/questions.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="./js/scroll.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 

@@ -314,9 +314,7 @@ body {
     transform: rotate(45deg);
 }
 
-
 /* FOOTER */
-
 
 footer{
     position: relative;
@@ -355,7 +353,7 @@ footer .social_icon li a{
 }
 
 footer .social_icon li a:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
 }
 
 footer .menute li a{
@@ -370,6 +368,7 @@ footer .menute li a{
 
 footer .menute li a:hover{
     opacity: 1;
+    transform: translateY(-5px);
 }
 
 footer p{
