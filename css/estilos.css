@@ -43,9 +43,12 @@ body {
     min-width: 600px;
     max-height: 800px;
     position: relative;
-    display: grid;
-    grid-template-rows: 100px 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: #fff;
+    padding-top: 10px; /* Ajusta el espacio para el nav fijo */
 }
 
 .hero::before{
@@ -62,20 +65,44 @@ body {
     background-attachment: fixed;
 }
 
+
+
 /* NAV */
+
+
 
 .nav {
     --padding-container: 0;
     height: 100px;
     display: flex;
     align-items: center;
+    position: fixed; /* Hace que el nav quede fijo */
+    top: 0; /* Lo fija en la parte superior */
+    width: 100%; /* Asegura que el nav abarque todo el ancho de la página */
+    background-color: transparent; /* Inicialmente transparente */
+    transition: background-color .8s ease; /* Transición suave para el cambio de fondo */
+    z-index: 1000; /* Lo coloca por encima de otros elementos */
 }
 
-.nav__title{
+.nav__content {
+    display: flex;
+    align-items: center;
+    width: 90%; /* Ancho del contenido del nav */
+    margin: 0 auto; /* Centra el contenido */
+}
+
+.nav.scrolled {
+    background-color: rgba(0, 0, 0, 0.6); /* Color de fondo cuando se desplaza */
+}
+
+.nav__title {
+    padding: 0 0 5px 0;
     font-weight: 300;
+    color: #fff; /* Color blanco para que sea visible sobre fondo transparente */
+    line-height: 1; /* Asegurar que el texto no se corte */
 }
 
-.nav__link{
+.nav__link {
     margin-left: auto;
     padding: 0;
     display: grid;
@@ -88,13 +115,12 @@ body {
     list-style: none;
 }
 
-
-.nav__links{
+.nav__links {
     color: #fff;
     text-decoration: none;
 }
 
-.nav__menu{
+.nav__menu {
     margin-left: auto;
     cursor: pointer;
     display: none;
@@ -104,15 +130,24 @@ body {
     display: var(--show, none);
 }
 
-.nav__img{
+.nav__img {
     display: block;
     width: 30px;
 }
 
+.content {
+    padding-top: 100px; /* Añade un relleno superior para evitar que el contenido se superponga al nav */
+}
+
+
+
 /* HERO CONTAINER */
+
+
 
 .hero__container{
     max-width: 800px;
+    padding-top: 100px; /* Añade espacio para el nav fijo */
     --padding-container: 0;
     display: grid;
     grid-auto-rows: max-content;
@@ -264,6 +299,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     gap:40px;
+    padding-bottom: 60px;
 }
 
 .contenedor__pregunta{

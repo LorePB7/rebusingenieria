@@ -37,29 +37,7 @@ body {
     padding: var(--padding-container);
 }
 
-.hero {
-    width: 100%;
-    height: 100vh;
-    min-width: 600px;
-    max-height: 800px;
-    position: relative;
-    display: grid;
-    grid-template-rows: 100px 1fr;
-    color: #fff;
-}
 
-.hero::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
-    z-index: -1;
-    background-attachment: fixed;
-}
 
 /* NAV */
 
@@ -68,13 +46,33 @@ body {
     height: 100px;
     display: flex;
     align-items: center;
+    position: fixed; /* Hace que el nav quede fijo */
+    top: 0; /* Lo fija en la parte superior */
+    width: 100%; /* Asegura que el nav abarque todo el ancho de la página */
+    background-color: transparent; /* Inicialmente transparente */
+    transition: background-color .8s ease; /* Transición suave para el cambio de fondo */
+    z-index: 1000; /* Lo coloca por encima de otros elementos */
 }
 
-.nav__title{
+.nav__content {
+    display: flex;
+    align-items: center;
+    width: 90%; /* Ancho del contenido del nav */
+    margin: 0 auto; /* Centra el contenido */
+}
+
+.nav.scrolled {
+    background-color: rgba(0, 0, 0, 0.6); /* Color de fondo cuando se desplaza */
+}
+
+.nav__title {
+    padding: 0 0 5px 0;
     font-weight: 300;
+    color: #fff; /* Color blanco para que sea visible sobre fondo transparente */
+    line-height: 1; /* Asegurar que el texto no se corte */
 }
 
-.nav__link{
+.nav__link {
     margin-left: auto;
     padding: 0;
     display: grid;
@@ -87,13 +85,12 @@ body {
     list-style: none;
 }
 
-
-.nav__links{
+.nav__links {
     color: #fff;
     text-decoration: none;
 }
 
-.nav__menu{
+.nav__menu {
     margin-left: auto;
     cursor: pointer;
     display: none;
@@ -103,19 +100,24 @@ body {
     display: var(--show, none);
 }
 
-.nav__img{
+.nav__img {
     display: block;
     width: 30px;
 }
 
-/* FORM */
+.content {
+    padding-top: 100px; /* Añade un relleno superior para evitar que el contenido se superponga al nav */
+}
+
+
+/*    FORM      */
 
 .form{
     width: 90%;
     max-width: 100%;
     margin: 0% auto;
     overflow: hidden;
-    padding: var(--padding-container);
+    padding:120px 0 150px 0;
 }
 
 .container__form{
@@ -214,7 +216,7 @@ button:hover {
 
   .close:hover,
   .close:focus {
-    color: black;
+    color: #F5B041;
     text-decoration: none;
     cursor: pointer;
   }
