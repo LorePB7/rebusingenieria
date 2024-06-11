@@ -8,6 +8,8 @@
     <link rel="shortcut icon" href="./images/hat.svg" type="image/x-icon">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/estilos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 </head>
 <body>
     <header class="hero" id="inicio">
@@ -39,7 +41,7 @@
             </div>
           </nav>
 
-        <section class="hero__container container">
+        <section class="hero__container container elemento">
             <h1 class="hero__title">¿QUIENES SOMOS?</h1>
             <p class="hero__par">Nos dedicamos al Diseño y Cálculo Estructural de todo tipo de obras, sin importar su tamaño, desde proyectos domiciliarios a industriales, abarcando obras nuevas y ampliaciones.
             También realizamos el revelamiento y evaluación de estructuras existentes en uso.</p>
@@ -47,7 +49,7 @@
         </section>
     </header>
     <main>
-        <section class="knowledge">
+        <section class="knowledge elemento">
             <div class="knowledge__container container">
 
                 <div class="knowledge__texts">
@@ -60,7 +62,9 @@
             </div>
         </section>
 
+        
         <section class="container about" id="servicios">
+            <section class="elemento">
             <h2 class="subtitle">Servicios</h2>
             <p class="about__par">Nos dedicamos al Diseño y Cálculo Estructural de todo tipo de obras, sin importar su tamaño, desde proyectos domiciliarios a industriales, abarcando obras nuevas y ampliaciones.
             También realizamos el revelamiento y evaluación de estructuras existentes en uso. Hacemos estructuras de hormigón, metálicas y proyectos especiales</p>
@@ -87,9 +91,10 @@
                     <p class="about__par">Abarcamos proyectos no convencionales, que no encuadran dentro de categorías estandares, realizando analisis exhaustivo de los factores intervinientes en el diseño, generando planos que lleguen al detalle, de manera de lograr pliegos fáciles de interpretar que mejoren la calidad de ejecución y agilicen los tiempos de obra.</p>
                 </article>
             </div>
+            </section>
         </section>
 
-        <section class="nosotros" id="nosotros">
+        <section class="nosotros elemento" id="nosotros">
             <div class="nosotros__container container">
 
                 <img src="./images/left-arrow.svg" alt="before" class="nosotros__arrow" id="before">
@@ -127,7 +132,7 @@
             </div>
         </section>
 
-        <section class="questions container">
+        <section class="questions container elemento">
             <h2 class="subtitle">Preguntas Frecuentes</h2>
             <div class="preguntas">
                 <div class="contenedor__preguntas" data-categoria="quest">
@@ -171,12 +176,14 @@
 
     </main>
 
+    
+    <script src="./js/apareciendo.js"></script>
+    <script src="./js/scroll.js"></script>
     <script src="./js/nav.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/questions.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <script src="./js/scroll.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     
