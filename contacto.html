@@ -4,152 +4,140 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="REBUS Ingeniería, especialistas en cálculo y diseño de estructuras. Contáctanos para más información.">
+    <meta name="keywords" content="ingeniería, cálculo de estructuras, diseño, construcción, proyectos, contacto">
     <title>REBUS INGENIERIA</title>
     <link rel="shortcut icon" href="./images/hat.svg" type="image/x-icon">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/contacto-estilos.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript">
         (function() {
-        // Inicializar EmailJS con tu public key
-         emailjs.init("tHRelJPmCMoeO43l6"); // Reemplaza con tu Public Key de EmailJS
-     })();
+            emailjs.init("tHRelJPmCMoeO43l6");
+        })();
     </script>
 </head>
 <body class="fade">
     <header class="hero" id="inicio">
         <nav class="nav container" id="navbar">
-          <div class="nav__content">
-            <div class="nav__logo">
-                <h1 class="nav__title">Rebus Ingenieria</h1>
+            <div class="nav__content">
+                <div class="nav__logo">
+                    <h1 class="nav__title">Rebus Ingenieria</h1>
+                </div>
+                <ul class="nav__link nav__link--menu">
+                    <li class="nav__items">
+                        <a href="index.html" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="nosotros.html" class="nav__links">Nosotros</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="servicios.html" class="nav__links">Servicios</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="contacto.html" class="nav__links">Contacto</a>
+                    </li>
+                    <img src="./images/close.svg" alt="Cerrar menú" class="nav__close">
+                </ul>
+                <div class="nav__menu">
+                    <img src="./images/menu.svg" alt="Abrir menú" class="nav__img">
+                </div>
             </div>
-            <ul class="nav__link nav__link--menu">
-                <li class="nav__items">
-                    <a href="index.html" class="nav__links">Inicio</a>
-                </li>
-                <li class="nav__items">
-                    <a href="nosotros.html" class="nav__links">Nosotros</a>
-                </li>
-                <li class="nav__items">
-                    <a href="servicios.html" class="nav__links">Servicios</a>
-                </li>
-                <li class="nav__items">
-                    <a href="contacto.html" class="nav__links">Contacto</a>
-                </li>
-
-                <img src="./images/close.svg" alt="close" class="nav__close">
-            </ul>
-
-            <div class="nav__menu">
-                <img src="./images/menu.svg" alt="menu" class="nav__img">
-            </div>
-          </div>
         </nav>
-      </header>
-
-        
-        <main>
-            <section>
-                <div class="form elemento">
-                  <form class="container__form" id="contactForm">
+    </header>
+    <main>
+        <section>
+            <div class="form elemento">
+                <form class="container__form" id="contactForm">
                     <h2 class="subtitle__form">Contacto</h2>
                     <div class="form-group">
-                      <label class="miniTitulo" for="name">Nombre:</label>
-                      <input type="text" id="name" name="name" required>
+                        <label class="miniTitulo" for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
                     </div>
                     <div class="form-group">
-                      <label class="miniTitulo" for="email">Correo Electrónico:</label>
-                      <input type="email" id="email" name="email" required>
+                        <label class="miniTitulo" for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
-                      <label class="miniTitulo" for="asunto">Asunto:</label>
-                      <input type="text" id="asunto" name="asunto" required>
+                        <label class="miniTitulo" for="asunto">Asunto:</label>
+                        <input type="text" id="asunto" name="asunto" required>
                     </div>
                     <div class="form-group">
-                      <label class="miniTitulo" for="message">Mensaje:</label>
-                      <textarea id="message" name="message" rows="5" required></textarea>
+                        <label class="miniTitulo" for="message">Mensaje:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
                     <button type="submit">Enviar <img src="./images/mail.svg" alt="Enviar" class="submit__img"></button>
-                  </form>
-                </div>
-
-                <!-- Modal de confirmación -->
-                <div id="confirmationModal" class="modal">
-                  <div class="modal-content">
+                </form>
+            </div>
+            <!-- Modal de confirmación -->
+            <div id="confirmationModal" class="modal">
+                <div class="modal-content">
                     <p>¡Tu mensaje ha sido enviado con éxito!</p>
                     <span class="close">&times;</span>
-                  </div>
                 </div>
-
-              </section>
-        <footer>
-            <div class="waves">
-                <div class="wave" id="wave1"></div>
-                <div class="wave" id="wave2"></div>
-                <div class="wave" id="wave3"></div>
-                <div class="wave" id="wave4"></div>
             </div>
-            <ul class="social_icon">
-                <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
-                <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
-                <li><a href=""><ion-icon name="logo-whatsapp"></ion-icon></a></li>
-                <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
-            </ul>
-            <ul class="menute">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-            <p>©2024 Lorenzo Píccolo web developer. | All Rights Reserved.</p>
-        </footer>
-
+        </section>
     </main>
-    <script type="text/javascript">
-        $(document).ready(function() {
-          $('#contactForm').on('submit', function(event) {
-            event.preventDefault(); // Evita el envío del formulario por defecto
-    
-            // Recopila los datos del formulario
-            var formData = {
-              name: $('#name').val(),
-              email: $('#email').val(),
-              asunto: $('#asunto').val(),
-              message: $('#message').val()
-            };
-    
-            // Enviar los datos usando EmailJS
-            emailjs.send('service_fpfffxk', 'template_rt1ee2u', formData)
-              .then(function(response) {
-                console.log('SUCCESS!', response.status, response.text);
-                $('#contactForm')[0].reset(); // Limpiar los datos del formulario
-                $('#confirmationModal').show(); // Mostrar el modal de confirmación
-              }, function(error) {
-                console.log('FAILED...', error);
-                alert('Hubo un error al enviar el mensaje.');
-              });
-          });
-                // Manejar el cierre del modal
-            $('.close').on('click', function() {
-              $('#confirmationModal').hide();
-            });
-
-            // Cerrar el modal si el usuario hace clic fuera del contenido del modal
-            $(window).on('click', function(event) {
-              if ($(event.target).is('#confirmationModal')) {
-                $('#confirmationModal').hide();
-              }
-            })
-          });
-    </script>
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social_icon">
+            <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href=""><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+            <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+        </ul>
+        <ul class="menute">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <p>©2024 Lorenzo Píccolo web developer. | All Rights Reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="./js/nav.js"></script>
     <script src="./js/transition.js"></script>
-    
-
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#contactForm').on('submit', function(event) {
+                event.preventDefault(); // Evita el envío del formulario por defecto
+                // Recopila los datos del formulario
+                var formData = {
+                    name: $('#name').val(),
+                    email: $('#email').val(),
+                    asunto: $('#asunto').val(),
+                    message: $('#message').val()
+                };
+                // Enviar los datos usando EmailJS
+                emailjs.send('service_fpfffxk', 'template_rt1ee2u', formData)
+                    .then(function(response) {
+                        console.log('SUCCESS!', response.status, response.text);
+                        $('#contactForm')[0].reset(); // Limpiar los datos del formulario
+                        $('#confirmationModal').show(); // Mostrar el modal de confirmación
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                        alert('Hubo un error al enviar el mensaje.');
+                    });
+            });
+            // Manejar el cierre del modal
+            $('.close').on('click', function() {
+                $('#confirmationModal').hide();
+            });
+            // Cerrar el modal si el usuario hace clic fuera del contenido del modal
+            $(window).on('click', function(event) {
+                if ($(event.target).is('#confirmationModal')) {
+                    $('#confirmationModal').hide();
+                }
+            });
+        });
+    </script>
 </body>
 </html>
