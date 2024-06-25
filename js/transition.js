@@ -1,18 +1,24 @@
 $(document).ready(function() {
-    // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
-        if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 1200, 'easeInOutExpo', function() {
-                window.location.hash = hash;
-            });
-        }
+    // Añadir la clase fade-in al cargar la página
+    $('body').addClass('fade-in');
+
+    // Manejar el clic en los enlaces
+    $('a').on('click', function(event) {
+        var href = $(this).attr('href');
+
+        // Prevenir la acción por defecto solo para enlaces de navegación entre páginas
+        event.preventDefault();
+
+        // Quitar la clase fade-in para iniciar la animación de desvanecimiento
+        $('body').removeClass('fade-in');
+
+        // Redirigir a la nueva página después de la animación
+        setTimeout(function() {
+            window.location.href = href;
+        }, 500); // Tiempo que coincide con la duración de la transición en CSS
     });
 
-    // Waypoints to animate elements on scroll
+    // Waypoints para animar elementos al hacer scroll
     $('.elemento').each(function() {
         var element = $(this);
 
@@ -25,7 +31,7 @@ $(document).ready(function() {
                     element.removeClass('visible');
                 }
             },
-            offset: '80%'
+            offset: '60%'
         });
 
         new Waypoint({

@@ -19,7 +19,7 @@
      })();
     </script>
 </head>
-<body>
+<body class="fade">
     <header class="hero" id="inicio">
         <nav class="nav container" id="navbar">
           <div class="nav__content">
@@ -31,10 +31,10 @@
                     <a href="index.html" class="nav__links">Inicio</a>
                 </li>
                 <li class="nav__items">
-                    <a href="index.html #nosotros" class="nav__links">Nosotros</a>
+                    <a href="nosotros.html" class="nav__links">Nosotros</a>
                 </li>
                 <li class="nav__items">
-                    <a href="index.html #servicios" class="nav__links">Servicios</a>
+                    <a href="servicios.html" class="nav__links">Servicios</a>
                 </li>
                 <li class="nav__items">
                     <a href="contacto.html" class="nav__links">Contacto</a>
@@ -48,6 +48,7 @@
             </div>
           </div>
         </nav>
+      </header>
 
         
         <main>
@@ -98,9 +99,9 @@
                 <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
             </ul>
             <ul class="menute">
-                <li><a href="index.html #inicio">Inicio</a></li>
-                <li><a href="index.html #nosotros">Nosotros</a></li>
-                <li><a href="index.html #servicios">Servicios</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
             <p>©2024 Lorenzo Píccolo web developer. | All Rights Reserved.</p>
@@ -141,13 +142,13 @@
               if ($(event.target).is('#confirmationModal')) {
                 $('#confirmationModal').hide();
               }
-            });
+            })
           });
     </script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="./js/nav.js"></script>
-    <script src="./js/apareciendo.js"></script>
+    <script src="./js/transition.js"></script>
     
 
 </body>

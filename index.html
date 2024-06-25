@@ -11,7 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 </head>
-<body>
+<body class="fade">
     <header class="hero" id="inicio">
         <nav class="nav container" id="navbar">
             <div class="nav__content container">
@@ -23,10 +23,10 @@
                       <a href="index.html" class="nav__links">Inicio</a>
                   </li>
                   <li class="nav__items">
-                      <a href="index.html #nosotros" class="nav__links">Nosotros</a>
+                      <a href="nosotros.html" class="nav__links">Nosotros</a>
                   </li>
                   <li class="nav__items">
-                      <a href="index.html #servicios" class="nav__links">Servicios</a>
+                      <a href="servicios.html" class="nav__links">Servicios</a>
                   </li>
                   <li class="nav__items">
                       <a href="contacto.html" class="nav__links">Contacto</a>
@@ -56,7 +56,7 @@
                     <h2 class="subtitle">Nosotros</h2>
                     <p class="knowledge__par">Somos una consultora de ingeniería conformada por profesionales de diferentes áreas, caracterizado por la innovación, eficiencia y responsabilidad.
                     Nos mantenemos actualizados en el uso de nuevas tecnologías disponibles en el mercado para brindar soluciones rápidas, económicas y eficientes a los proyectos de nuestros clientes.</p>
-                    <a href="#nosotros" class="page-scroll cta">Conoce nuestro equipo de trabajo</a>
+                    <a href="nosotros.html" class="page-scroll cta">Conoce nuestro equipo de trabajo</a>
                 </div>
 
             </div>
@@ -72,13 +72,13 @@
             <div class="about__main">
 
                 <article class="about__icons">
-                    <img src="./images/hat.svg" alt="icon" class="about__icon">
+                    <img src="./images/bridge2.svg" alt="icon" class="about__icon">
                     <h3 class="about__title">Estructuras de Hormigón</h3>
                     <p class="about__par">Desarrollamos diseño y cálculo de estructuras de hormigón, tanto de proyectos edilicios como industriales.Proyectamos estructuras estables, resistentes, funcionales y estéticas, incluyendo desde el primer momento los aspectos constructivos de la obra, para llegar a resultados económicos que ahorren tiempo y dinero a nuestros clientes.</p>
                 </article>
 
                 <article class="about__icons">
-                    <img src="./images/school.svg" alt="icon" class="about__icon">
+                    <img src="./images/metal.svg" alt="icon" class="about__icon">
                     <h3 class="about__title">Estructuras Metálicas</h3>
                     <p class="about__par">Desde proyectos industriales a ampliaciones domiciliarias, nos dedicamos a realizar proyectos integrales con el mismo nivel de calidad en nuestro trabajo.
                     Diseñamos y calculamos todas los elementos intervinientes en una obra que incluya este tipo de estrucutras, considerando siempre el funcionamiento, mantenimiento y montaje de la misma.
@@ -86,51 +86,15 @@
                 </article>
 
                 <article class="about__icons">
-                    <img src="./images/notepad.svg" alt="icon" class="about__icon">
+                    <img src="./images/manager.svg" alt="icon" class="about__icon">
                     <h3 class="about__title">Proyectos Especiales</h3>
                     <p class="about__par">Abarcamos proyectos no convencionales, que no encuadran dentro de categorías estandares, realizando analisis exhaustivo de los factores intervinientes en el diseño, generando planos que lleguen al detalle, de manera de lograr pliegos fáciles de interpretar que mejoren la calidad de ejecución y agilicen los tiempos de obra.</p>
                 </article>
             </div>
             </section>
         </section>
+        
 
-        <section class="nosotros elemento" id="nosotros">
-            <div class="nosotros__container container">
-
-                <img src="./images/left-arrow.svg" alt="before" class="nosotros__arrow" id="before">
-
-                <section class="nosotros__body  nosotros__body--show" data-id="1">
-                    <div class="nosotros__texts">
-                        <h2 class="subtitle">Ing. Mariano Marioni</h2>
-                        <h3 class="nosotros__h3">Mat. C.P.I.C.: 1-1663-7</h3>
-                        <p class="nosotros__text">Ingeniero Civil y Técnico Constructor Nacional.
-                            Ha proyectado viviendas unifamiliares como profesional independiente y a participado en la dirección de obras edilicias. Desde 2018 se dedica  exclusivamente al cálculo y diseño de estructuras. 
-                            En 2019 funda REBUS Ingeniería y Proyectos junto a Facundo Muchiutti.</p>
-                    </div>
-                    <figure class="nosotros__pic">
-                        <img src="./images/cachorro.jpg" alt="img" class="nosotros__img">
-                    </figure>
-                </section>
-
-                <section class="nosotros__body" data-id="2">
-                    <div class="nosotros__texts">
-                        <h2 class="subtitle">Ing. Facundo J. Muchiutti</h2>
-                        <h3 class="nosotros__h3">Mat. C.P.I.C.: 1-1659-9</h3>
-                        <p class="nosotros__text">Ingeniero Civil y Técnico Constructor Nacional.
-                            Ha participado en diferentes proyectos hidráulicos y ha proyectado más de 2000m2 entre diferentes viviendas. Actualmente se desarrolla como Auditor Interno para la Municipalidad de Santa Fe, además de ser calculista.
-                            En 2019 funda REBUS Ingeniería y Proyectos junto a Mariano Marioni.</p>
-                    </div>
-
-                    <figure class="nosotros__pic">
-                        <img src="./images/facundo.jpg" alt="img__nosotros" class="nosotros__img">
-                    </figure>
-
-                </section>
-
-                <img src="./images/right-arrow.svg" alt="next" class="nosotros__arrow" id="next">
-
-            </div>
-        </section>
 
         <section class="questions container elemento">
             <h2 class="subtitle">Preguntas Frecuentes</h2>
@@ -166,9 +130,9 @@
                 <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
             </ul>
             <ul class="menute">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
             <p>©2024 Lorenzo Píccolo web developer. | All Rights Reserved.</p>
@@ -177,8 +141,7 @@
     </main>
 
     
-    <script src="./js/apareciendo.js"></script>
-    <script src="./js/scroll.js"></script>
+    <script src="./js/transition.js"></script>
     <script src="./js/nav.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/questions.js"></script>
@@ -186,6 +149,7 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
     
 
 </body>
