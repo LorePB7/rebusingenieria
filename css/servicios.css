@@ -112,10 +112,101 @@ body {
 
 /*         SERVICIOS           */
 
+/* SERVICIOS */
 
-.servicios{
-    padding: 500px 0 200px 0;;
+.servicios {
+    margin-top: 100px;
 }
+
+.subtitle {
+    color: var(--color-title);
+    font-size: 2rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.service-item {
+    background-color: #fff;
+    border: 2px solid var(--primario);
+    border-radius: 10px;
+    padding: 10px;
+    width: 30%; /* Ajusta el ancho de los elementos de servicio */
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.service-item:hover {
+    background-color: #B5B2B2;
+}
+
+.service-description {
+    display: none;
+    margin-top: 20px;
+    width: 100%; /* Asegurar que el contenedor ocupe el 100% del ancho disponible */
+    display: flex;
+    justify-content: center;
+    transition: max-height 1s ease-in-out, opacity 1s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.service-description.visible {
+    max-height: 1200px; /* Un valor suficientemente grande para mostrar el contenido */
+    opacity: 1;
+}
+
+.carousel-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Fondo grisaceo transparente */
+    border-radius: 10px;
+    padding: 30px 0 0 30px;
+    width: 100%; /* Asegurar que el contenedor ocupe el 100% del ancho del contenedor principal */
+    max-width: 1200px; /* Máximo ancho para el contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+}
+
+.carousel {
+    width: 50%; /* Ajusta el ancho de la imagen */
+    margin-right: 20px; /* Espacio entre la imagen y la descripción */
+}
+
+.carousel img {
+    width: 100%;
+    height: auto; /* Mantener la relación de aspecto */
+    max-height: 300px; /* Limitar la altura de las imágenes */
+    object-fit: cover; /* Asegurar que las imágenes cubran el área asignada */
+    border-radius: 10px;
+    display: block;
+}
+
+/* Ocultar el texto debajo de las imágenes del carrusel */
+.carousel p {
+    display: none;
+}
+
+.description {
+    width: 50%;
+    padding: 20px;
+    color: white;
+}
+
+.description p {
+    margin: 0;
+}
+
+
 
 /* ELEMENTOS APARECIENDO SCROLL */
 

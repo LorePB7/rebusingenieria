@@ -4,56 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REBUS INGENIERIA</title>
+    <title>REBUS INGENIERIA - SERVICIOS</title>
     <link rel="shortcut icon" href="./images/hat.svg" type="image/x-icon">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/servicios.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 </head>
 <body class="fade">
     <header class="hero" id="inicio">
         <nav class="nav container" id="navbar">
-          <div class="nav__content">
-            <div class="nav__logo">
-                <h1 class="nav__title">Rebus Ingenieria</h1>
+            <div class="nav__content">
+                <div class="nav__logo">
+                    <h1 class="nav__title">Rebus Ingenieria</h1>
+                </div>
+                <ul class="nav__link nav__link--menu">
+                    <li class="nav__items">
+                        <a href="index.html" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="nosotros.html" class="nav__links">Nosotros</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="servicios.html" class="nav__links">Servicios</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="contacto.html" class="nav__links">Contacto</a>
+                    </li>
+                    <img src="./images/close.svg" alt="Cerrar menú" class="nav__close">
+                </ul>
+                <div class="nav__menu">
+                    <img src="./images/menu.svg" alt="Abrir menú" class="nav__img">
+                </div>
             </div>
-            <ul class="nav__link nav__link--menu">
-                <li class="nav__items">
-                    <a href="index.html" class="nav__links">Inicio</a>
-                </li>
-                <li class="nav__items">
-                    <a href="nosotros.html" class="nav__links">Nosotros</a>
-                </li>
-                <li class="nav__items">
-                    <a href="servicios.html" class="nav__links">Servicios</a>
-                </li>
-                <li class="nav__items">
-                    <a href="contacto.html" class="nav__links">Contacto</a>
-                </li>
-
-                <img src="./images/close.svg" alt="close" class="nav__close">
-            </ul>
-
-            <div class="nav__menu">
-                <img src="./images/menu.svg" alt="menu" class="nav__img">
-            </div>
-          </div>
         </nav>
-      </header>
+    </header>
+    
+    <main>
+        <section class="servicios">
+            <div class="container">
+                <h2 class="subtitle">Nuestros Servicios</h2>
+                <div class="services-grid">
+                    <div class="service-item" data-service="1">
+                        <h3>Diseño y Cálculo Estructural</h3>
+                    </div>
+                    <div class="service-item" data-service="2">
+                        <h3>Relevamiento y Evaluación de Estructuras</h3>
+                    </div>
+                    <div class="service-item" data-service="3">
+                        <h3>Proyectos Especiales</h3>
+                    </div>
+                </div>
 
-        
-        <main>
-        
-
-
-        <section>
-        <div class="servicios"></div>
+                <div class="service-description" id="service-1">
+                    <div class="carousel-container">
+                        <div class="carousel">
+                            <div><img src="./images/imageningeniero1.jpg" alt="Proyecto 1 Imagen 1"></div>
+                            <div><img src="./images/imageningeniero2.jpg" alt="Proyecto 1 Imagen 2"></div>
+                        </div>
+                        <div class="description">
+                            <p>Ofrecemos servicios de diseño y cálculo estructural para proyectos residenciales e industriales. Nos aseguramos de que todas las estructuras sean seguras y eficientes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-description" id="service-2">
+                    <div class="carousel-container">
+                        <div class="carousel">
+                            <div><img src="./images/imageningeniero3.jpg" alt="Proyecto 2 Imagen 1"></div>
+                            <div><img src="./images/imageningeniero2.jpg" alt="Proyecto 2 Imagen 2"></div>
+                        </div>
+                        <div class="description">
+                            <p>Realizamos el relevamiento y evaluación de estructuras existentes para garantizar su seguridad y funcionalidad. Proveemos informes detallados y recomendaciones para mejoras.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-description" id="service-3">
+                    <div class="carousel-container">
+                        <div class="carousel">
+                            <div><img src="./images/imageningeniero4.jpg" alt="Proyecto 3 Imagen 1"></div>
+                            <div><img src="./images/imageningeniero5.jpg" alt="Proyecto 3 Imagen 2"></div>
+                        </div>
+                        <div class="description">
+                            <p>Desarrollamos proyectos especiales a medida, abordando desafíos únicos y proporcionando soluciones innovadoras que cumplen con los más altos estándares de calidad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-
-
-
 
         <footer>
             <div class="waves">
@@ -76,14 +116,38 @@
             </ul>
             <p>©2024 Lorenzo Píccolo web developer. | All Rights Reserved.</p>
         </footer>
-
     </main>
     
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="./js/nav.js"></script>
     <script src="./js/transition.js"></script>
-    
+    <script>
+        $(document).ready(function() {
+            $('.service-description').hide(); // Ocultar todas las descripciones inicialmente
+            $('.carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 800,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                adaptiveHeight: true,
+                arrows: true,
+            });
 
+            $('.service-item').on('click', function() {
+                var serviceId = $(this).data('service');
+                var $currentDescription = $('#service-' + serviceId);
+
+                if ($currentDescription.is(':visible')) {
+                    $currentDescription.slideUp().removeClass('visible');
+                } else {
+                    $('.service-description:visible').slideUp().removeClass('visible');
+                    $currentDescription.slideDown().addClass('visible');
+                    $('#service-' + serviceId + ' .carousel').slick('setPosition');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
