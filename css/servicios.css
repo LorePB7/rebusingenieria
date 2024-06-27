@@ -27,6 +27,7 @@ body {
         linear-gradient(90deg,var(--c3) 38%,var(--c1) 0 50%,var(--c3) 0 62%,var(--c1) 0);
     background-size: var(--s) calc(2*var(--s)/3);  
 }
+
       
 
 .container {
@@ -122,6 +123,7 @@ body {
 
 .servicios {
     margin-top: 100px;
+    margin-bottom: 250px;
 }
 
 .subtitle {
@@ -140,18 +142,28 @@ body {
 }
 
 .service-item {
+    display: flex;
     background-color: #fff;
     border: 2px solid var(--primario);
     border-radius: 10px;
     padding: 10px;
-    width: 30%; /* Ajusta el ancho de los elementos de servicio */
     text-align: center;
+    width: 30%; /* Ajusta el ancho de los elementos de servicio */
     cursor: pointer;
     transition: background-color 0.5s;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    transition: background-color 0.5s, transform 0.3s; /* Añadir transición de transformación */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    font-size: 1rem; /* Reducir ligeramente el tamaño de la fuente */
+    min-height: 150px; /* Asegurar una altura mínima */
+    box-shadow: var(--sombra); /* Añadir sombra para darle más estilo */
 }
 
 .service-item:hover {
     background-color: #B5B2B2;
+    transform: translateY(-5px); /* Efecto de desplazamiento hacia arriba */
 }
 
 .service-description {
@@ -170,6 +182,7 @@ body {
     max-height: 1200px; /* Un valor suficientemente grande para mostrar el contenido */
     opacity: 1;
 }
+
 
 .carousel-container {
     display: flex;
