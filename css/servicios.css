@@ -124,6 +124,8 @@ body {
 .servicios {
     margin-top: 100px;
     margin-bottom: 250px;
+    min-height: 600px;
+    max-height: 600px;
 }
 
 .subtitle {
@@ -143,7 +145,7 @@ body {
 
 .service-item {
     display: flex;
-    background-color: #fff;
+    background-color: #B5B2B2;
     border: 2px solid var(--primario);
     border-radius: 10px;
     padding: 10px;
@@ -157,12 +159,12 @@ body {
     align-items: center; /* Centrar verticalmente */
     justify-content: center; /* Centrar horizontalmente */
     font-size: 1rem; /* Reducir ligeramente el tamaño de la fuente */
-    min-height: 150px; /* Asegurar una altura mínima */
+    min-height: 50px; /* Asegurar una altura mínima */
     box-shadow: var(--sombra); /* Añadir sombra para darle más estilo */
 }
 
 .service-item:hover {
-    background-color: #B5B2B2;
+    background-color: #fff;
     transform: translateY(-5px); /* Efecto de desplazamiento hacia arriba */
 }
 
