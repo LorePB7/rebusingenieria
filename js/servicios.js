@@ -1,5 +1,8 @@
 $(document).ready(function() {
-    $('.service-description').hide(); // Ocultar todas las descripciones inicialmente
+    // Ocultar todas las descripciones inicialmente
+    $('.service-description').hide();
+
+    // Inicializar el carrusel con flechas
     $('.carousel').slick({
         dots: true,
         infinite: true,
@@ -10,19 +13,20 @@ $(document).ready(function() {
         arrows: true,
     });
 
+    // Manejar el clic en un service-item
     $('.service-item').on('click', function() {
         var serviceId = $(this).data('service');
         var $currentDescription = $('#service-' + serviceId);
 
         if ($currentDescription.hasClass('visible')) {
-            $currentDescription.slideUp(600, function() {
+            $currentDescription.slideUp(800, function() {
                 $(this).removeClass('visible');
             });
         } else {
-            $('.service-description.visible').slideUp(600, function() {
+            $('.service-description.visible').slideUp(800, function() {
                 $(this).removeClass('visible');
             });
-            $currentDescription.slideDown(600, function() {
+            $currentDescription.slideDown(800, function() {
                 $(this).addClass('visible');
                 $('#service-' + serviceId + ' .carousel').slick('setPosition');
             });

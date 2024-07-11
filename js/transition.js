@@ -47,3 +47,33 @@ $(document).ready(function() {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const imgWebP = new Image();
+                const imgFallback = new Image();
+                imgWebP.src = "./images/imageningeniero5.webp";
+                imgFallback.src = "./images/imageningeniero5.jpg";
+
+                imgWebP.onload = () => {
+                    entry.target.style.backgroundImage = 'linear-gradient(180deg , #0000008c 0%, #0000008c 100%), url(' + imgWebP.src + ')';
+                };
+
+                imgWebP.onerror = () => {
+                    imgFallback.onload = () => {
+                        entry.target.style.backgroundImage = 'linear-gradient(180deg , #0000008c 0%, #0000008c 100%), url(' + imgFallback.src + ')';
+                    };
+                };
+
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    const aboutSection = document.querySelector('.about');
+    observer.observe(aboutSection);
+});
+
+

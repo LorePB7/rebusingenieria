@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
 :root{
     --padding-container: 100px 0;
     --color-title: #F5B041;
@@ -28,8 +27,6 @@ body {
     background-size: var(--s) calc(2*var(--s)/3);  
 }
 
-      
-
 .container {
     width: 90%;
     max-width: 100%;
@@ -38,10 +35,7 @@ body {
     padding: var(--padding-container);
 }
 
-
-
 /* NAV */
-
 .nav {
     --padding-container: 0;
     height: 100px;
@@ -116,16 +110,12 @@ body {
     padding-top: 100px; /* Añade un relleno superior para evitar que el contenido se superponga al nav */
 }
 
-
-/*         SERVICIOS           */
-
 /* SERVICIOS */
-
 .servicios {
     margin-top: 100px;
     margin-bottom: 250px;
-    min-height: 600px;
-    max-height: 600px;
+    min-height: 650px;
+    max-height: 650px;
 }
 
 .subtitle {
@@ -168,10 +158,11 @@ body {
     transform: translateY(-5px); /* Efecto de desplazamiento hacia arriba */
 }
 
+/* Carrusel y descripción */
 .service-description {
     display: none;
     margin-top: 20px;
-    width: 100%; /* Asegurar que el contenedor ocupe el 100% del ancho disponible */
+    width: 100%;
     display: flex;
     justify-content: center;
     transition: max-height 1s ease-in-out, opacity 1s ease-in-out;
@@ -181,40 +172,40 @@ body {
 }
 
 .service-description.visible {
-    max-height: 1200px; /* Un valor suficientemente grande para mostrar el contenido */
+    max-height: 1200px;
     opacity: 1;
 }
-
 
 .carousel-container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background: rgba(0, 0, 0, 0.5); /* Fondo grisaceo transparente */
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     padding: 30px 0 0 30px;
-    width: 100%; /* Asegurar que el contenedor ocupe el 100% del ancho del contenedor principal */
-    max-width: 1200px; /* Máximo ancho para el contenedor */
-    margin: 0 auto; /* Centrar el contenedor */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .carousel {
-    width: 50%; /* Ajusta el ancho de la imagen */
-    margin-right: 20px; /* Espacio entre la imagen y la descripción */
+    width: 50%;
+    margin-right: 20px;
 }
 
 .carousel img {
     width: 100%;
-    height: auto; /* Mantener la relación de aspecto */
-    max-height: 300px; /* Limitar la altura de las imágenes */
-    object-fit: cover; /* Asegurar que las imágenes cubran el área asignada */
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
     border-radius: 10px;
     display: block;
 }
 
-/* Ocultar el texto debajo de las imágenes del carrusel */
 .carousel p {
-    display: none;
+    color: white;
+    text-align: center;
+    margin: 10px 0 0 0;
 }
 
 .description {
@@ -228,10 +219,7 @@ body {
 }
 
 
-
 /* ELEMENTOS APARECIENDO SCROLL */
-
-/* Animación para los elementos al hacer scroll */
 .elemento {
     opacity: 0;
     transform: translateY(20px);
@@ -253,11 +241,7 @@ body {
     opacity: 1;
 }
 
-
-
 /* FOOTER */
-
-
 footer{
     margin-top: 30px;
     position: relative;

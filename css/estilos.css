@@ -197,34 +197,37 @@ body {
    margin-bottom: 20px;
 }
 
-/* ABOUT  */
+/* ABOUT */
 
-.about{
+.about {
     width: 100%;
     text-align: center;
-    background-image: linear-gradient(180deg , #0000008c 0%, #0000008c 100%), url(../images/imageningeniero5.jpg);
     background-size: cover;
+    background-position: center;
     z-index: -1;
     background-attachment: fixed;
+    will-change: transform;
+    background-image: linear-gradient(180deg , #0000008c 0%, #0000008c 100%);
 }
 
-.subtitle{
+
+.subtitle {
     color: var(--color-title);
-    font-size:2rem;
+    font-size: 2rem;
     margin-bottom: 25px;
     text-align: center;
 }
 
-.about__title{
+.about__title {
     color: #F5B041;
 }
 
-.about__par{
+.about__par {
     line-height: 1.7;
     color: #fff;
 }
 
-.about__main{
+.about__main {
     padding-top: 80px;
     display: grid;
     width: 100%;
@@ -243,9 +246,11 @@ body {
     margin: auto;
 }
 
-.about__icon{
+.about__icon {
     width: 40px;
 }
+
+
 
 /* NOSOTROS */
 
