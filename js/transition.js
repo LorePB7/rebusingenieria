@@ -73,7 +73,11 @@ document.addEventListener("DOMContentLoaded", function() {
     }, { threshold: 0.1 });
 
     const aboutSection = document.querySelector('.about');
-    observer.observe(aboutSection);
+
+    // Verificar si el elemento existe antes de observarlo
+    if (aboutSection) {
+        observer.observe(aboutSection);
+    } else {
+        console.error("Elemento 'aboutSection' no encontrado.");
+    }
 });
-
-

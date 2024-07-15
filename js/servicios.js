@@ -1,7 +1,4 @@
 $(document).ready(function() {
-    // Ocultar todas las descripciones inicialmente
-    $('.service-description').hide();
-
     // Inicializar el carrusel con flechas
     $('.carousel').slick({
         dots: true,
@@ -16,20 +13,44 @@ $(document).ready(function() {
     // Manejar el clic en un service-item
     $('.service-item').on('click', function() {
         var serviceId = $(this).data('service');
-        var $currentDescription = $('#service-' + serviceId);
+        var $currentDescriptionContainer = $('#service-' + serviceId);
 
-        if ($currentDescription.hasClass('visible')) {
-            $currentDescription.slideUp(800, function() {
+        if ($currentDescriptionContainer.hasClass('visible')) {
+            $currentDescriptionContainer.slideUp(800, function() {
                 $(this).removeClass('visible');
+                $('.service-description').removeClass('visible').css('max-height', '0').css('opacity', '0');
             });
         } else {
-            $('.service-description.visible').slideUp(800, function() {
+            $('.service-description-container.visible').slideUp(800, function() {
                 $(this).removeClass('visible');
+                $('.service-description').removeClass('visible').css('max-height', '0').css('opacity', '0');
             });
-            $currentDescription.slideDown(800, function() {
+            $currentDescriptionContainer.slideDown(800, function() {
                 $(this).addClass('visible');
+                $('#service-' + serviceId + ' .service-description:first').addClass('visible').css('max-height', '1200px').css('opacity', '1');
                 $('#service-' + serviceId + ' .carousel').slick('setPosition');
             });
+        }
+    });
+
+    // Manejar la navegación entre descripciones
+    $('.next-service').on('click', function() {
+        var currentDescription = $(this).closest('.service-description');
+        var nextDescription = currentDescription.next('.service-description');
+        if (nextDescription.length) {
+            currentDescription.removeClass('visible').css('max-height', '0').css('opacity', '0');
+            nextDescription.addClass('visible').css('max-height', '1200px').css('opacity', '1');
+            nextDescription.find('.carousel').slick('setPosition');
+        }
+    });
+
+    $('.prev-service').on('click', function() {
+        var currentDescription = $(this).closest('.service-description');
+        var prevDescription = currentDescription.prev('.service-description');
+        if (prevDescription.length) {
+            currentDescription.removeClass('visible').css('max-height', '0').css('opacity', '0');
+            prevDescription.addClass('visible').css('max-height', '1200px').css('opacity', '1');
+            prevDescription.find('.carousel').slick('setPosition');
         }
     });
 });
