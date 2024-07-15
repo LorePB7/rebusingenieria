@@ -70,6 +70,7 @@ body {
     font-weight: 300;
     color: #fff; /* Color blanco para que sea visible sobre fondo transparente */
     line-height: 1; /* Asegurar que el texto no se corte */
+    cursor: pointer;
 }
 
 .nav__link {
